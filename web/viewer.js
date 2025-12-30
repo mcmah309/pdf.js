@@ -34,86 +34,86 @@ function getViewerConfiguration() {
     mainContainer: document.getElementById("viewerContainer"),
     viewerContainer: document.getElementById("viewer"),
     viewerAlert: document.getElementById("viewer-alert"),
-    toolbar: {
-      container: document.getElementById("toolbarContainer"),
-      numPages: document.getElementById("numPages"),
-      pageNumber: document.getElementById("pageNumber"),
-      scaleSelect: document.getElementById("scaleSelect"),
-      customScaleOption: document.getElementById("customScaleOption"),
-      previous: document.getElementById("previous"),
-      next: document.getElementById("next"),
-      zoomIn: document.getElementById("zoomInButton"),
-      zoomOut: document.getElementById("zoomOutButton"),
-      print: document.getElementById("printButton"),
-      editorCommentButton: document.getElementById("editorCommentButton"),
-      editorCommentParamsToolbar: document.getElementById(
-        "editorCommentParamsToolbar"
-      ),
-      editorFreeTextButton: document.getElementById("editorFreeTextButton"),
-      editorFreeTextParamsToolbar: document.getElementById(
-        "editorFreeTextParamsToolbar"
-      ),
-      editorHighlightButton: document.getElementById("editorHighlightButton"),
-      editorHighlightParamsToolbar: document.getElementById(
-        "editorHighlightParamsToolbar"
-      ),
-      editorHighlightColorPicker: document.getElementById(
-        "editorHighlightColorPicker"
-      ),
-      editorInkButton: document.getElementById("editorInkButton"),
-      editorInkParamsToolbar: document.getElementById("editorInkParamsToolbar"),
-      editorStampButton: document.getElementById("editorStampButton"),
-      editorStampParamsToolbar: document.getElementById(
-        "editorStampParamsToolbar"
-      ),
-      editorSignatureButton: document.getElementById("editorSignatureButton"),
-      editorSignatureParamsToolbar: document.getElementById(
-        "editorSignatureParamsToolbar"
-      ),
-      download: document.getElementById("downloadButton"),
-    },
-    viewsManager: {
-      outerContainer: document.getElementById("outerContainer"),
-      toggleButton: document.getElementById("viewsManagerToggleButton"),
-      sidebarContainer: document.getElementById("viewsManager"),
-      resizer: document.getElementById("viewsManagerResizer"),
-      thumbnailButton: document.getElementById("thumbnailsViewMenu"),
-      outlineButton: document.getElementById("outlinesViewMenu"),
-      attachmentsButton: document.getElementById("attachmentsViewMenu"),
-      layersButton: document.getElementById("layersViewMenu"),
-      viewsManagerSelectorButton: document.getElementById(
-        "viewsManagerSelectorButton"
-      ),
-      viewsManagerSelectorOptions: document.getElementById(
-        "viewsManagerSelectorOptions"
-      ),
-      thumbnailsView: document.getElementById("thumbnailsView"),
-      outlinesView: document.getElementById("outlinesView"),
-      attachmentsView: document.getElementById("attachmentsView"),
-      layersView: document.getElementById("layersView"),
-      viewsManagerAddFileButton: document.getElementById(
-        "viewsManagerAddFileButton"
-      ),
-      viewsManagerCurrentOutlineButton: document.getElementById(
-        "viewsManagerCurrentOutlineButton"
-      ),
-      viewsManagerHeaderLabel: document.getElementById(
-        "viewsManagerHeaderLabel"
-      ),
-    },
-    findBar: {
-      bar: document.getElementById("findbar"),
-      toggleButton: document.getElementById("viewFindButton"),
-      findField: document.getElementById("findInput"),
-      highlightAllCheckbox: document.getElementById("findHighlightAll"),
-      caseSensitiveCheckbox: document.getElementById("findMatchCase"),
-      matchDiacriticsCheckbox: document.getElementById("findMatchDiacritics"),
-      entireWordCheckbox: document.getElementById("findEntireWord"),
-      findMsg: document.getElementById("findMsg"),
-      findResultsCount: document.getElementById("findResultsCount"),
-      findPreviousButton: document.getElementById("findPreviousButton"),
-      findNextButton: document.getElementById("findNextButton"),
-    },
+    // toolbar: {
+    //   container: document.getElementById("toolbarContainer"),
+    //   numPages: document.getElementById("numPages"),
+    //   pageNumber: document.getElementById("pageNumber"),
+    //   scaleSelect: document.getElementById("scaleSelect"),
+    //   customScaleOption: document.getElementById("customScaleOption"),
+    //   previous: document.getElementById("previous"),
+    //   next: document.getElementById("next"),
+    //   zoomIn: document.getElementById("zoomInButton"),
+    //   zoomOut: document.getElementById("zoomOutButton"),
+    //   print: document.getElementById("printButton"),
+    //   editorCommentButton: document.getElementById("editorCommentButton"),
+    //   editorCommentParamsToolbar: document.getElementById(
+    //     "editorCommentParamsToolbar"
+    //   ),
+    //   editorFreeTextButton: document.getElementById("editorFreeTextButton"),
+    //   editorFreeTextParamsToolbar: document.getElementById(
+    //     "editorFreeTextParamsToolbar"
+    //   ),
+    //   editorHighlightButton: document.getElementById("editorHighlightButton"),
+    //   editorHighlightParamsToolbar: document.getElementById(
+    //     "editorHighlightParamsToolbar"
+    //   ),
+    //   editorHighlightColorPicker: document.getElementById(
+    //     "editorHighlightColorPicker"
+    //   ),
+    //   editorInkButton: document.getElementById("editorInkButton"),
+    //   editorInkParamsToolbar: document.getElementById("editorInkParamsToolbar"),
+    //   editorStampButton: document.getElementById("editorStampButton"),
+    //   editorStampParamsToolbar: document.getElementById(
+    //     "editorStampParamsToolbar"
+    //   ),
+    //   editorSignatureButton: document.getElementById("editorSignatureButton"),
+    //   editorSignatureParamsToolbar: document.getElementById(
+    //     "editorSignatureParamsToolbar"
+    //   ),
+    //   download: document.getElementById("downloadButton"),
+    // },
+    // viewsManager: {
+    //   outerContainer: document.getElementById("outerContainer"),
+    //   toggleButton: document.getElementById("viewsManagerToggleButton"),
+    //   sidebarContainer: document.getElementById("viewsManager"),
+    //   resizer: document.getElementById("viewsManagerResizer"),
+    //   thumbnailButton: document.getElementById("thumbnailsViewMenu"),
+    //   outlineButton: document.getElementById("outlinesViewMenu"),
+    //   attachmentsButton: document.getElementById("attachmentsViewMenu"),
+    //   layersButton: document.getElementById("layersViewMenu"),
+    //   viewsManagerSelectorButton: document.getElementById(
+    //     "viewsManagerSelectorButton"
+    //   ),
+    //   viewsManagerSelectorOptions: document.getElementById(
+    //     "viewsManagerSelectorOptions"
+    //   ),
+    //   thumbnailsView: document.getElementById("thumbnailsView"),
+    //   outlinesView: document.getElementById("outlinesView"),
+    //   attachmentsView: document.getElementById("attachmentsView"),
+    //   layersView: document.getElementById("layersView"),
+    //   viewsManagerAddFileButton: document.getElementById(
+    //     "viewsManagerAddFileButton"
+    //   ),
+    //   viewsManagerCurrentOutlineButton: document.getElementById(
+    //     "viewsManagerCurrentOutlineButton"
+    //   ),
+    //   viewsManagerHeaderLabel: document.getElementById(
+    //     "viewsManagerHeaderLabel"
+    //   ),
+    // },
+    // findBar: {
+    //   bar: document.getElementById("findbar"),
+    //   toggleButton: document.getElementById("viewFindButton"),
+    //   findField: document.getElementById("findInput"),
+    //   highlightAllCheckbox: document.getElementById("findHighlightAll"),
+    //   caseSensitiveCheckbox: document.getElementById("findMatchCase"),
+    //   matchDiacriticsCheckbox: document.getElementById("findMatchDiacritics"),
+    //   entireWordCheckbox: document.getElementById("findEntireWord"),
+    //   findMsg: document.getElementById("findMsg"),
+    //   findResultsCount: document.getElementById("findResultsCount"),
+    //   findPreviousButton: document.getElementById("findPreviousButton"),
+    //   findNextButton: document.getElementById("findNextButton"),
+    // },
     passwordOverlay: {
       dialog: document.getElementById("passwordDialog"),
       label: document.getElementById("passwordText"),
@@ -141,37 +141,37 @@ function getViewerConfiguration() {
         linearized: document.getElementById("linearizedField"),
       },
     },
-    annotationEditorParams: {
-      editorCommentsSidebar: document.getElementById("editorCommentsSidebar"),
-      editorCommentsSidebarCount: document.getElementById(
-        "editorCommentsSidebarCount"
-      ),
-      editorCommentsSidebarTitle: document.getElementById(
-        "editorCommentsSidebarTitle"
-      ),
-      editorCommentsSidebarCloseButton: document.getElementById(
-        "editorCommentsSidebarCloseButton"
-      ),
-      editorCommentsSidebarList: document.getElementById(
-        "editorCommentsSidebarList"
-      ),
-      editorCommentsSidebarResizer: document.getElementById(
-        "editorCommentsSidebarResizer"
-      ),
-      editorFreeTextFontSize: document.getElementById("editorFreeTextFontSize"),
-      editorFreeTextColor: document.getElementById("editorFreeTextColor"),
-      editorInkColor: document.getElementById("editorInkColor"),
-      editorInkThickness: document.getElementById("editorInkThickness"),
-      editorInkOpacity: document.getElementById("editorInkOpacity"),
-      editorStampAddImage: document.getElementById("editorStampAddImage"),
-      editorSignatureAddSignature: document.getElementById(
-        "editorSignatureAddSignature"
-      ),
-      editorFreeHighlightThickness: document.getElementById(
-        "editorFreeHighlightThickness"
-      ),
-      editorHighlightShowAll: document.getElementById("editorHighlightShowAll"),
-    },
+    // annotationEditorParams: {
+    //   editorCommentsSidebar: document.getElementById("editorCommentsSidebar"),
+    //   editorCommentsSidebarCount: document.getElementById(
+    //     "editorCommentsSidebarCount"
+    //   ),
+    //   editorCommentsSidebarTitle: document.getElementById(
+    //     "editorCommentsSidebarTitle"
+    //   ),
+    //   editorCommentsSidebarCloseButton: document.getElementById(
+    //     "editorCommentsSidebarCloseButton"
+    //   ),
+    //   editorCommentsSidebarList: document.getElementById(
+    //     "editorCommentsSidebarList"
+    //   ),
+    //   editorCommentsSidebarResizer: document.getElementById(
+    //     "editorCommentsSidebarResizer"
+    //   ),
+    //   editorFreeTextFontSize: document.getElementById("editorFreeTextFontSize"),
+    //   editorFreeTextColor: document.getElementById("editorFreeTextColor"),
+    //   editorInkColor: document.getElementById("editorInkColor"),
+    //   editorInkThickness: document.getElementById("editorInkThickness"),
+    //   editorInkOpacity: document.getElementById("editorInkOpacity"),
+    //   editorStampAddImage: document.getElementById("editorStampAddImage"),
+    //   editorSignatureAddSignature: document.getElementById(
+    //     "editorSignatureAddSignature"
+    //   ),
+    //   editorFreeHighlightThickness: document.getElementById(
+    //     "editorFreeHighlightThickness"
+    //   ),
+    //   editorHighlightShowAll: document.getElementById("editorHighlightShowAll"),
+    // },
     printContainer: document.getElementById("printContainer"),
     editorUndoBar: {
       container: document.getElementById("editorUndoBar"),
@@ -179,14 +179,14 @@ function getViewerConfiguration() {
       undoButton: document.getElementById("editorUndoBarUndoButton"),
       closeButton: document.getElementById("editorUndoBarCloseButton"),
     },
-    editCommentDialog: {
-      dialog: document.getElementById("commentManagerDialog"),
-      toolbar: document.getElementById("commentManagerToolbar"),
-      title: document.getElementById("commentManagerTitle"),
-      textInput: document.getElementById("commentManagerTextInput"),
-      cancelButton: document.getElementById("commentManagerCancelButton"),
-      saveButton: document.getElementById("commentManagerSaveButton"),
-    },
+    // editCommentDialog: {
+    //   dialog: document.getElementById("commentManagerDialog"),
+    //   toolbar: document.getElementById("commentManagerToolbar"),
+    //   title: document.getElementById("commentManagerTitle"),
+    //   textInput: document.getElementById("commentManagerTextInput"),
+    //   cancelButton: document.getElementById("commentManagerCancelButton"),
+    //   saveButton: document.getElementById("commentManagerSaveButton"),
+    // },
   };
 }
 

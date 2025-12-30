@@ -102,7 +102,7 @@ See https://github.com/adobe-type-tools/cmap-resources
       <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
 
       <div id="mainContainer">
-        <div class="toolbar">
+        <!-- <div class="toolbar">
           <div id="toolbarContainer">
             <div id="toolbarViewer" class="toolbarHorizontalGroup">
               <div id="toolbarViewerLeft" class="toolbarHorizontalGroup">
@@ -126,7 +126,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                   aria-describedby="viewsManagerHeaderLabel"
                   data-l10n-id="pdfjs-views-manager-sidebar"
                 >
-                  <div id="viewsManagerHeader" role="heading" aria-level="2">
+                <div id="viewsManagerHeader" role="heading" aria-level="2">
                     <div id="viewsManagerTitle">
                       <div id="viewsManagerSelector">
                         <button
@@ -279,7 +279,6 @@ See https://github.com/adobe-type-tools/cmap-resources
                   </div>
                   <div id="viewsManagerResizer" class="sidebarResizer"></div>
                 </div>
-                <!-- sidebarContainer -->
 
                 <div class="toolbarButtonSpacer"></div>
                 <div class="toolbarButtonWithContainer">
@@ -336,7 +335,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                       <span id="findMsg" class="toolbarLabel"></span>
                     </div>
                   </div>
-                  <!-- findbar -->
+
                 </div>
                 <div class="toolbarHorizontalGroup hiddenSmallView">
                   <button class="toolbarButton" type="button" id="previous" tabindex="0" data-l10n-id="pdfjs-previous-button">
@@ -633,11 +632,11 @@ See https://github.com/adobe-type-tools/cmap-resources
                   </button>
                   <div id="secondaryToolbar" class="hidden doorHangerRight menu">
                     <div id="secondaryToolbarButtonContainer" class="menuContainer">
-                      <!--#if GENERIC-->
+
                       <button id="secondaryOpenFile" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-open-file-button">
                         <span data-l10n-id="pdfjs-open-file-button-label"></span>
                       </button>
-                      <!--#endif-->
+
 
                       <div class="visibleMediumView">
                         <button id="secondaryPrint" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-print-button">
@@ -648,14 +647,9 @@ See https://github.com/adobe-type-tools/cmap-resources
                           <span data-l10n-id="pdfjs-save-button-label"></span>
                         </button>
 
-                        <!--#if !GENERIC-->
-                        <!--            <div class="horizontalToolbarSeparator"></div>-->
-                        <!--#endif-->
                       </div>
 
-                      <!--#if GENERIC-->
                       <div class="horizontalToolbarSeparator"></div>
-                      <!--#endif-->
 
                       <button id="presentationMode" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-presentation-mode-button">
                         <span data-l10n-id="pdfjs-presentation-mode-button-label"></span>
@@ -823,7 +817,6 @@ See https://github.com/adobe-type-tools/cmap-resources
                       </button>
                     </div>
                   </div>
-                  <!-- secondaryToolbar -->
                 </div>
               </div>
             </div>
@@ -833,13 +826,12 @@ See https://github.com/adobe-type-tools/cmap-resources
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div id="viewerContainer" tabindex="0">
           <div id="viewer" class="pdfViewer"></div>
         </div>
       </div>
-      <!-- mainContainer -->
 
       <div id="dialogContainer">
         <dialog id="passwordDialog">
@@ -919,7 +911,7 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
         </dialog>
 
-        <dialog class="dialog commentManager" id="commentManagerDialog" aria-labelledby="commentManagerTitle">
+        <!-- <dialog class="dialog commentManager" id="commentManagerDialog" aria-labelledby="commentManagerTitle">
           <div class="mainContainer">
             <div class="title" id="commentManagerToolbar">
               <span id="commentManagerTitle" role="sectionhead" data-l10n-id="pdfjs-editor-edit-comment-dialog-title-when-adding"></span>
@@ -934,9 +926,8 @@ See https://github.com/adobe-type-tools/cmap-resources
               </button>
             </div>
           </div>
-        </dialog>
+        </dialog> -->
 
-        <!--#if !MOZCENTRAL-->
         <dialog id="printServiceDialog" style="min-width: 200px">
           <div class="row">
             <span data-l10n-id="pdfjs-print-progress-message"></span>
