@@ -72,6 +72,38 @@ function getViewerConfiguration() {
     //   ),
     //   download: document.getElementById("downloadButton"),
     // },
+    // secondaryToolbar: {
+    //   toolbar: document.getElementById("secondaryToolbar"),
+    //   toggleButton: document.getElementById("secondaryToolbarToggleButton"),
+    //   presentationModeButton: document.getElementById("presentationMode"),
+    //   openFileButton:
+    //     typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")
+    //       ? document.getElementById("secondaryOpenFile")
+    //       : null,
+    //   printButton: document.getElementById("secondaryPrint"),
+    //   downloadButton: document.getElementById("secondaryDownload"),
+    //   viewBookmarkButton: document.getElementById("viewBookmark"),
+    //   firstPageButton: document.getElementById("firstPage"),
+    //   lastPageButton: document.getElementById("lastPage"),
+    //   pageRotateCwButton: document.getElementById("pageRotateCw"),
+    //   pageRotateCcwButton: document.getElementById("pageRotateCcw"),
+    //   cursorSelectToolButton: document.getElementById("cursorSelectTool"),
+    //   cursorHandToolButton: document.getElementById("cursorHandTool"),
+    //   scrollPageButton: document.getElementById("scrollPage"),
+    //   scrollVerticalButton: document.getElementById("scrollVertical"),
+    //   scrollHorizontalButton: document.getElementById("scrollHorizontal"),
+    //   scrollWrappedButton: document.getElementById("scrollWrapped"),
+    //   spreadNoneButton: document.getElementById("spreadNone"),
+    //   spreadOddButton: document.getElementById("spreadOdd"),
+    //   spreadEvenButton: document.getElementById("spreadEven"),
+    //   imageAltTextSettingsButton: document.getElementById(
+    //     "imageAltTextSettings"
+    //   ),
+    //   imageAltTextSettingsSeparator: document.getElementById(
+    //     "imageAltTextSettingsSeparator"
+    //   ),
+    //   documentPropertiesButton: document.getElementById("documentProperties"),
+    // },
     // viewsManager: {
     //   outerContainer: document.getElementById("outerContainer"),
     //   toggleButton: document.getElementById("viewsManagerToggleButton"),
@@ -141,6 +173,87 @@ function getViewerConfiguration() {
         linearized: document.getElementById("linearizedField"),
       },
     },
+    // altTextDialog: {
+    //   dialog: document.getElementById("altTextDialog"),
+    //   optionDescription: document.getElementById("descriptionButton"),
+    //   optionDecorative: document.getElementById("decorativeButton"),
+    //   textarea: document.getElementById("descriptionTextarea"),
+    //   cancelButton: document.getElementById("altTextCancel"),
+    //   saveButton: document.getElementById("altTextSave"),
+    // },
+    // newAltTextDialog: {
+    //   dialog: document.getElementById("newAltTextDialog"),
+    //   title: document.getElementById("newAltTextTitle"),
+    //   descriptionContainer: document.getElementById(
+    //     "newAltTextDescriptionContainer"
+    //   ),
+    //   textarea: document.getElementById("newAltTextDescriptionTextarea"),
+    //   disclaimer: document.getElementById("newAltTextDisclaimer"),
+    //   learnMore: document.getElementById("newAltTextLearnMore"),
+    //   imagePreview: document.getElementById("newAltTextImagePreview"),
+    //   createAutomatically: document.getElementById(
+    //     "newAltTextCreateAutomatically"
+    //   ),
+    //   createAutomaticallyButton: document.getElementById(
+    //     "newAltTextCreateAutomaticallyButton"
+    //   ),
+    //   downloadModel: document.getElementById("newAltTextDownloadModel"),
+    //   downloadModelDescription: document.getElementById(
+    //     "newAltTextDownloadModelDescription"
+    //   ),
+    //   error: document.getElementById("newAltTextError"),
+    //   errorCloseButton: document.getElementById("newAltTextCloseButton"),
+    //   cancelButton: document.getElementById("newAltTextCancel"),
+    //   notNowButton: document.getElementById("newAltTextNotNow"),
+    //   saveButton: document.getElementById("newAltTextSave"),
+    // },
+    // altTextSettingsDialog: {
+    //   dialog: document.getElementById("altTextSettingsDialog"),
+    //   createModelButton: document.getElementById("createModelButton"),
+    //   aiModelSettings: document.getElementById("aiModelSettings"),
+    //   learnMore: document.getElementById("altTextSettingsLearnMore"),
+    //   deleteModelButton: document.getElementById("deleteModelButton"),
+    //   downloadModelButton: document.getElementById("downloadModelButton"),
+    //   showAltTextDialogButton: document.getElementById(
+    //     "showAltTextDialogButton"
+    //   ),
+    //   altTextSettingsCloseButton: document.getElementById(
+    //     "altTextSettingsCloseButton"
+    //   ),
+    //   closeButton: document.getElementById("altTextSettingsCloseButton"),
+    // },
+    // addSignatureDialog: {
+    //   dialog: document.getElementById("addSignatureDialog"),
+    //   panels: document.getElementById("addSignatureActionContainer"),
+    //   typeButton: document.getElementById("addSignatureTypeButton"),
+    //   typeInput: document.getElementById("addSignatureTypeInput"),
+    //   drawButton: document.getElementById("addSignatureDrawButton"),
+    //   drawSVG: document.getElementById("addSignatureDraw"),
+    //   drawPlaceholder: document.getElementById("addSignatureDrawPlaceholder"),
+    //   drawThickness: document.getElementById("addSignatureDrawThickness"),
+    //   imageButton: document.getElementById("addSignatureImageButton"),
+    //   imageSVG: document.getElementById("addSignatureImage"),
+    //   imagePlaceholder: document.getElementById("addSignatureImagePlaceholder"),
+    //   imagePicker: document.getElementById("addSignatureFilePicker"),
+    //   imagePickerLink: document.getElementById("addSignatureImageBrowse"),
+    //   description: document.getElementById("addSignatureDescription"),
+    //   clearButton: document.getElementById("clearSignatureButton"),
+    //   saveContainer: document.getElementById("addSignatureSaveContainer"),
+    //   saveCheckbox: document.getElementById("addSignatureSaveCheckbox"),
+    //   errorBar: document.getElementById("addSignatureError"),
+    //   errorTitle: document.getElementById("addSignatureErrorTitle"),
+    //   errorDescription: document.getElementById("addSignatureErrorDescription"),
+    //   errorCloseButton: document.getElementById("addSignatureErrorCloseButton"),
+    //   cancelButton: document.getElementById("addSignatureCancelButton"),
+    //   addButton: document.getElementById("addSignatureAddButton"),
+    // },
+    // editSignatureDialog: {
+    //   dialog: document.getElementById("editSignatureDescriptionDialog"),
+    //   description: document.getElementById("editSignatureDescription"),
+    //   editSignatureView: document.getElementById("editSignatureView"),
+    //   cancelButton: document.getElementById("editSignatureCancelButton"),
+    //   updateButton: document.getElementById("editSignatureUpdateButton"),
+    // },
     // annotationEditorParams: {
     //   editorCommentsSidebar: document.getElementById("editorCommentsSidebar"),
     //   editorCommentsSidebarCount: document.getElementById(
