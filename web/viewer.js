@@ -285,7 +285,7 @@ function getViewerConfiguration() {
     //   ),
     //   editorHighlightShowAll: document.getElementById("editorHighlightShowAll"),
     // },
-    printContainer: document.getElementById("printContainer"),
+    // printContainer: document.getElementById("printContainer"),
     editorUndoBar: {
       container: document.getElementById("editorUndoBar"),
       message: document.getElementById("editorUndoBarMessage"),
