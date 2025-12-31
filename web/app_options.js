@@ -218,7 +218,7 @@ const defaultOptions = {
   },
   enableAltTextModelDownload: {
     /** @type {boolean} */
-    value: true,
+    value: false,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE + OptionKind.EVENT_DISPATCH,
   },
   enableAutoLinking: {
@@ -228,7 +228,7 @@ const defaultOptions = {
   },
   enableComment: {
     /** @type {boolean} */
-    value: typeof PDFJSDev === "undefined",
+    value: true,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE,
   },
   enableDetailCanvas: {
@@ -238,7 +238,7 @@ const defaultOptions = {
   },
   enableGuessAltText: {
     /** @type {boolean} */
-    value: true,
+    value: false,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE + OptionKind.EVENT_DISPATCH,
   },
   enableHighlightFloatingButton: {
@@ -251,7 +251,7 @@ const defaultOptions = {
   },
   enableNewAltTextWhenAddingImage: {
     /** @type {boolean} */
-    value: true,
+    value: false,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE,
   },
   enableOptimizedPartialRendering: {
@@ -271,12 +271,12 @@ const defaultOptions = {
   },
   enableScripting: {
     /** @type {boolean} */
-    value: typeof PDFJSDev === "undefined" || !PDFJSDev.test("CHROME"),
+    value: true,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE,
   },
   enableSignatureEditor: {
     /** @type {boolean} */
-    value: typeof PDFJSDev === "undefined" || PDFJSDev.test("TESTING"),
+    value: false,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE,
   },
   enableUpdatedAddImage: {
@@ -566,7 +566,7 @@ if (typeof PDFJSDev === "undefined" || !PDFJSDev.test("MOZCENTRAL")) {
 if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
   defaultOptions.disablePreferences = {
     /** @type {boolean} */
-    value: typeof PDFJSDev !== "undefined" && PDFJSDev.test("TESTING"),
+    value: true, // Users can no longer set there own preferences
     kind: OptionKind.VIEWER,
   };
 } else if (PDFJSDev.test("CHROME")) {

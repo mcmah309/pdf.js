@@ -624,26 +624,10 @@ const PDFViewerApplication = {
       );
     }
 
-    if (appConfig.annotationEditorParams) {
-      if (annotationEditorMode !== AnnotationEditorType.DISABLE) {
-        const editorSignatureButton = appConfig.toolbar?.editorSignatureButton;
-        if (editorSignatureButton && AppOptions.get("enableSignatureEditor")) {
-          editorSignatureButton.parentElement.hidden = false;
-        }
-        const editorCommentButton = appConfig.toolbar?.editorCommentButton;
-        if (editorCommentButton && AppOptions.get("enableComment")) {
-          editorCommentButton.parentElement.hidden = false;
-        }
-        this.annotationEditorParams = new AnnotationEditorParams(
-          appConfig.annotationEditorParams,
-          eventBus
-        );
-      } else {
-        for (const id of ["editorModeButtons", "editorModeSeparator"]) {
-          document.getElementById(id)?.classList.add("hidden");
-        }
-      }
-    }
+        // this.annotationEditorParams = new AnnotationEditorParams(
+        //   appConfig.annotationEditorParams,
+        //   eventBus
+        // );
 
     if (mlManager && appConfig.secondaryToolbar?.imageAltTextSettingsButton) {
       this.imageAltTextSettings = new ImageAltTextSettings(
