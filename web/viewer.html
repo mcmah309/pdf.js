@@ -102,7 +102,7 @@ See https://github.com/adobe-type-tools/cmap-resources
       <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
 
       <div id="mainContainer">
-        <div class="toolbar" hidden>
+        <div class="toolbar">
           <div id="toolbarContainer">
             <div id="toolbarViewer" class="toolbarHorizontalGroup">
               <div id="toolbarViewerLeft" class="toolbarHorizontalGroup">
@@ -279,7 +279,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                   </div>
                   <div id="viewsManagerResizer" class="sidebarResizer"></div>
                 </div>
-
+                <!-- sidebarContainer -->
 
                 <div class="toolbarButtonSpacer"></div>
                 <div class="toolbarButtonWithContainer">
@@ -336,7 +336,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                       <span id="findMsg" class="toolbarLabel"></span>
                     </div>
                   </div>
-
+                  <!-- findbar -->
                 </div>
                 <div class="toolbarHorizontalGroup hiddenSmallView">
                   <button class="toolbarButton" type="button" id="previous" tabindex="0" data-l10n-id="pdfjs-previous-button">
@@ -633,11 +633,11 @@ See https://github.com/adobe-type-tools/cmap-resources
                   </button>
                   <div id="secondaryToolbar" class="hidden doorHangerRight menu">
                     <div id="secondaryToolbarButtonContainer" class="menuContainer">
-
+                      <!--#if GENERIC-->
                       <button id="secondaryOpenFile" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-open-file-button">
                         <span data-l10n-id="pdfjs-open-file-button-label"></span>
                       </button>
-
+                      <!--#endif-->
 
                       <div class="visibleMediumView">
                         <button id="secondaryPrint" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-print-button">
@@ -648,14 +648,14 @@ See https://github.com/adobe-type-tools/cmap-resources
                           <span data-l10n-id="pdfjs-save-button-label"></span>
                         </button>
 
-
-
-
+                        <!--#if !GENERIC-->
+                        <!--            <div class="horizontalToolbarSeparator"></div>-->
+                        <!--#endif-->
                       </div>
 
-
+                      <!--#if GENERIC-->
                       <div class="horizontalToolbarSeparator"></div>
-
+                      <!--#endif-->
 
                       <button id="presentationMode" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-presentation-mode-button">
                         <span data-l10n-id="pdfjs-presentation-mode-button-label"></span>
@@ -823,7 +823,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                       </button>
                     </div>
                   </div>
-
+                  <!-- secondaryToolbar -->
                 </div>
               </div>
             </div>
@@ -839,7 +839,7 @@ See https://github.com/adobe-type-tools/cmap-resources
           <div id="viewer" class="pdfViewer"></div>
         </div>
       </div>
-
+      <!-- mainContainer -->
 
       <div id="dialogContainer">
         <dialog id="passwordDialog">
@@ -854,7 +854,7 @@ See https://github.com/adobe-type-tools/cmap-resources
             <button id="passwordSubmit" class="dialogButton" type="button"><span data-l10n-id="pdfjs-password-ok-button"></span></button>
           </div>
         </dialog>
-        <dialog id="documentPropertiesDialog" hidden>
+        <dialog id="documentPropertiesDialog">
           <div class="row">
             <span id="fileNameLabel" data-l10n-id="pdfjs-document-properties-file-name"></span>
             <p id="fileNameField" aria-labelledby="fileNameLabel">-</p>
@@ -918,7 +918,7 @@ See https://github.com/adobe-type-tools/cmap-resources
             <button id="documentPropertiesClose" class="dialogButton" type="button"><span data-l10n-id="pdfjs-document-properties-close-button"></span></button>
           </div>
         </dialog>
-        <dialog class="dialog altText" id="altTextDialog" aria-labelledby="dialogLabel" aria-describedby="dialogDescription" hidden>
+        <dialog class="dialog altText" id="altTextDialog" aria-labelledby="dialogLabel" aria-describedby="dialogDescription">
           <div id="altTextContainer" class="mainContainer">
             <div id="overallDescription">
               <span id="dialogLabel" data-l10n-id="pdfjs-editor-alt-text-dialog-label" class="title"></span>
@@ -1250,7 +1250,8 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
         </dialog>
 
-        <dialog id="printServiceDialog" style="min-width: 200px" hidden>
+        <!--#if !MOZCENTRAL-->
+        <dialog id="printServiceDialog" style="min-width: 200px">
           <div class="row">
             <span data-l10n-id="pdfjs-print-progress-message"></span>
           </div>
@@ -1262,13 +1263,13 @@ See https://github.com/adobe-type-tools/cmap-resources
             <button id="printCancel" class="dialogButton" type="button"><span data-l10n-id="pdfjs-print-progress-close-button"></span></button>
           </div>
         </dialog>
-
-
-
-
+        <!--#endif-->
+        <!--#if CHROME-->
+        <!--#include viewer-snippet-chrome-overlays.html-->
+        <!--#endif-->
       </div>
+      <!-- dialogContainer -->
 
-<div hidden>
       <div id="editorUndoBar" class="messageBar" role="status" aria-labelledby="editorUndoBarMessage" tabindex="-1" hidden>
         <div>
           <div>
@@ -1282,10 +1283,9 @@ See https://github.com/adobe-type-tools/cmap-resources
           </button>
         </div>
       </div>
-
+      <!-- editorUndoBar -->
     </div>
-    </div>
-
+    <!-- outerContainer -->
     <div id="printContainer"></div>
   </body>
 </html>
